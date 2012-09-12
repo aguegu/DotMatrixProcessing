@@ -6,7 +6,6 @@ public class Dot
 
 	public Dot()
 	{
-
 	}
 	
 	public void turnOn()

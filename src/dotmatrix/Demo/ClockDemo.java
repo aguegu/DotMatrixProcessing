@@ -13,7 +13,7 @@ public class ClockDemo extends PApplet
 {
 	private static final long serialVersionUID = -663453412567788630L;
 	
-	private DotMatrixDemo dmd;
+	private DotMatrixDemo _dmd;
 	private DotMatrix _dm;		
 
 	private ArrayList<DotFont0706> alFonts;		
@@ -23,9 +23,9 @@ public class ClockDemo extends PApplet
 		
 	public void setup()
 	{
-		dmd = new DotMatrixDemo(this, 24*4, 7, null);
-		dmd.SetDisplayStyle(16, 8);
-		_dm = dmd.getDM();		
+		_dmd = new DotMatrixDemo(this, 24*4, 7, null);
+		_dmd.SetDisplayStyle(16, 8);
+		_dm = _dmd.getDM();		
 		
 		alFonts = new ArrayList<DotFont0706>();
 		alColons = new ArrayList<DotFont>();
@@ -59,6 +59,6 @@ public class ClockDemo extends PApplet
 			font.show();
 		}
 		
-		dmd.display();
+		_dmd.display();
 	}
 }

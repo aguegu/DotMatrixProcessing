@@ -14,7 +14,7 @@ public class BarDemo extends PApplet
 
 	private DotMatrix _dm;
 	
-	private DotMatrixDemo dmDemo;
+	private DotMatrixDemo _dmDemo;
 	
 	private Bar bars[];
 
@@ -24,8 +24,8 @@ public class BarDemo extends PApplet
 
 	public void setup()
 	{
-		dmDemo = new DotMatrixDemo(this, 48, 7, null);
-		_dm = dmDemo.getDM();
+		_dmDemo = new DotMatrixDemo(this, 48, 7, null);
+		_dm = _dmDemo.getDM();
 		
 		bars = new Bar[48];
 		
@@ -58,7 +58,7 @@ public class BarDemo extends PApplet
 			bars[3*i+1].show();
 	    }
 		
-		dmDemo.display();
+		_dmDemo.display();
 	}
 	
 	public void stop()
