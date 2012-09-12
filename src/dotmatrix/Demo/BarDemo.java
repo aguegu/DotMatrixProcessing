@@ -24,7 +24,7 @@ public class BarDemo extends PApplet
 
 	public void setup()
 	{
-		dmDemo = new DotMatrixDemo(this, 48, 7, "COM3");
+		dmDemo = new DotMatrixDemo(this, 48, 7, null);
 		_dm = dmDemo.getDM();
 		
 		bars = new Bar[48];

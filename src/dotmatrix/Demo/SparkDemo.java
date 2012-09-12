@@ -18,7 +18,7 @@ public class SparkDemo extends PApplet
 	
 	public void setup()
 	{
-		dmDemo = new DotMatrixDemo(this, 48, 7, "COM3");
+		dmDemo = new DotMatrixDemo(this, 48, 7, null);
 		_dm = dmDemo.getDM();		
 		
 		alSparks = new ArrayList<Spark>();
