@@ -32,7 +32,6 @@ public class Spark extends Dot
 		
 	public void show()
 	{
-	
 		if (getRow() <0 || getRow() >= _dm.getRowCount())return;
 		if (getCol() <0 || getCol() >= _dm.getColCount())return;
 		
