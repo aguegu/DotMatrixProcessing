@@ -23,7 +23,7 @@ public class ClockDemo extends PApplet
 		
 	public void setup()
 	{
-		dmd = new DotMatrixDemo(this, 24*4, 7, "COM5");
+		dmd = new DotMatrixDemo(this, 24*4, 7, null);
 		dmd.SetDisplayStyle(16, 8);
 		_dm = dmd.getDM();		
 		
