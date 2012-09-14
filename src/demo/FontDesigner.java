@@ -3,7 +3,7 @@ package demo;
 import dotmatrix.DotMatrix;
 import dotmatrix.DotMatrixDemo;
 import dotmatrix.DotMatrixDisplay;
-import dotmatrix.TestHelper;
+import dotmatrix.TextHelper;
 
 import processing.core.PApplet;
 
@@ -47,7 +47,7 @@ public class FontDesigner extends PApplet
 
 		this.background(0x33);
 		
-		TestHelper.PrintText(this, calcPattern(), 0xff, 24f, 8f, height - 12f);
+		TextHelper.PrintText(this, calcPattern(), 0xff, 24f, 8f, height - 12f);
 		dmDemo.display();
 
 	}

@@ -3,7 +3,7 @@ package demo;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import ddf.minim.analysis.*;
-import dotmatrix.TestHelper;
+import dotmatrix.TextHelper;
 import processing.core.PApplet;
 
 public class FFTDemo extends PApplet
@@ -36,8 +36,8 @@ public class FFTDemo extends PApplet
 		
 		fill(255);
 		background(0x00);
-		TestHelper.PrintText(this, Integer.toString(fft.avgSize()));
-		TestHelper.PrintText(this, Float.toString(fftMax), 0xff, 2, 48);
+		TextHelper.PrintText(this, Integer.toString(fft.avgSize()));
+		TextHelper.PrintText(this, Float.toString(fftMax), 0xff, 2, 48);
 		//fft.inverse(ap.mix);
 		fft.forward(ap.mix);
 		int w = (int)(width/fft.avgSize());

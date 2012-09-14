@@ -3,7 +3,7 @@ package dotmatrix;
 import processing.core.PApplet;
 import processing.core.PFont;
 
-public class TestHelper
+public class TextHelper
 {
 	static PFont _pf;
 	static int _color = 0xff;

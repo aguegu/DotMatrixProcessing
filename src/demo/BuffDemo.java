@@ -2,7 +2,7 @@ package demo;
 
 import processing.core.PApplet;
 import ddf.minim.*;
-import dotmatrix.TestHelper;
+import dotmatrix.TextHelper;
 
 public class BuffDemo extends PApplet
 {
@@ -36,8 +36,8 @@ public class BuffDemo extends PApplet
 	
 	public void draw()
 	{	
-		TestHelper.PrintText(this, Float.toString(buffMax));
-		TestHelper.PrintText(this, Float.toString(buffMin), 0xff, 2f, 48f);
+		TextHelper.PrintText(this, Float.toString(buffMax));
+		TextHelper.PrintText(this, Float.toString(buffMin), 0xff, 2f, 48f);
 		
 		r+=0.02;
 		fade(20);		 
