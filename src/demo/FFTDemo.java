@@ -1,4 +1,4 @@
-package dotmatrix.Demo;
+package demo;
 
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;

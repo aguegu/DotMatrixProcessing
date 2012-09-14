@@ -1,4 +1,4 @@
-package dotmatrix.Demo;
+package demo;
 
 import java.util.ArrayList;
 

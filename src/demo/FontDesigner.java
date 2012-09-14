@@ -1,4 +1,4 @@
-package dotmatrix.Demo;
+package demo;
 
 import dotmatrix.DotMatrix;
 import dotmatrix.DotMatrixDemo;
