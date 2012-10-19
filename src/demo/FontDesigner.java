@@ -47,7 +47,7 @@ public class FontDesigner extends PApplet
 
 		this.background(0x33);
 		
-		TextHelper.PrintText(this, calcPattern(), 0xff, 24f, 8f, height - 12f);
+		TextHelper.printText(this, calcPattern(), 0xff, 24f, 8f, height - 12f);
 		dmDemo.display();
 
 	}

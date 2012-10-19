@@ -36,8 +36,8 @@ public class BuffDemo extends PApplet
 	
 	public void draw()
 	{	
-		TextHelper.PrintText(this, Float.toString(buffMax));
-		TextHelper.PrintText(this, Float.toString(buffMin), 0xff, 2f, 48f);
+		TextHelper.printText(this, Float.toString(buffMax));
+		TextHelper.printText(this, Float.toString(buffMin), 0xff, 2f, 48f);
 		
 		r+=0.02;
 		fade(20);		 

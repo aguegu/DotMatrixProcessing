@@ -36,8 +36,8 @@ public class FFTDemo extends PApplet
 		
 		fill(255);
 		background(0x00);
-		TextHelper.PrintText(this, Integer.toString(fft.avgSize()));
-		TextHelper.PrintText(this, Float.toString(fftMax), 0xff, 2, 48);
+		TextHelper.printText(this, Integer.toString(fft.avgSize()));
+		TextHelper.printText(this, Float.toString(fftMax), 0xff, 2, 48);
 		//fft.inverse(ap.mix);
 		fft.forward(ap.mix);
 		int w = (int)(width/fft.avgSize());

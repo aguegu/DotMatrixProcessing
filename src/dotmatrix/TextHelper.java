@@ -8,7 +8,7 @@ public class TextHelper
 	static PFont _pf;
 	static int _color = 0xff;
 	
-	public static void PrintText(PApplet parent, String s)
+	public static void printText(PApplet parent, String s)
 	{
 		if (_pf == null )
 			_pf = parent.loadFont("Calibri-24.vlw");
@@ -18,7 +18,7 @@ public class TextHelper
 		parent.text(s, 2, 24);		
 	}
 	
-	public static void PrintText(PApplet parent, String s, int fontColor)
+	public static void printText(PApplet parent, String s, int fontColor)
 	{
 		if (_pf == null )
 			_pf = parent.loadFont("Calibri-24.vlw");
@@ -30,7 +30,7 @@ public class TextHelper
 		parent.text(s, 2, 24);		
 	}
 	
-	public static void PrintText(PApplet parent, String s, int fontColor, float x, float y)
+	public static void printText(PApplet parent, String s, int fontColor, float x, float y)
 	{
 		if (_pf == null )
 			_pf = parent.loadFont("Calibri-24.vlw");
@@ -42,7 +42,7 @@ public class TextHelper
 		parent.text(s, x, y);		
 	}
 	
-	public static void PrintText(PApplet parent, String s, int fontColor, float fontSize, float x, float y)
+	public static void printText(PApplet parent, String s, int fontColor, float fontSize, float x, float y)
 	{
 		if (_pf == null )
 			_pf = parent.loadFont("Calibri-24.vlw");
