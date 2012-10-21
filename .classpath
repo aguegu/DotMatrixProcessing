@@ -1,66 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="lib/base/serial/RXTXcomm.jar" sourcepath="/home/agu/processing-1.5.1/modes/java/libraries/serial/src">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/serial"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/serial/serial.jar" sourcepath="/home/agu/processing-1.5.1/modes/java/libraries/serial/src">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/serial"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/tritonus_aos.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/jsminim.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/mp3spi1.9.4.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/tritonus_share.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/minim-spi.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/minim.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/minim/jl1.0.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/minim"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/core/ant.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/core"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/core/ant-launcher.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/core"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/base/core/core.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="DotMatrixProcessing/lib/base/core"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/core/library/core.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/minim.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/serial/library/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/serial/library/serial.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/minim-spi.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/jsminim.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/jl1.0.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/mp3spi1.9.4.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/tritonus_aos.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b3/modes/java/libraries/minim/library/tritonus_share.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
