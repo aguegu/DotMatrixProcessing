@@ -5,20 +5,21 @@ import processing.core.PApplet;
 import java.util.Arrays;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
-// import processing.serial.*;
+import processing.serial.*;
 
 public class BitmapDemo extends PApplet
 {
 	private static final long serialVersionUID = -8270200464164013L;
 
 	private byte[] _cache;
-	// private Serial _sp;
+	private Serial _sp;
+
 	Minim _minim;
 	AudioPlayer _ap;
 
 	public void setup()
 	{
-		// _sp = new Serial(this, "/dev/ttyACM0", 115200);
+		_sp = new Serial(this, "/dev/ttyACM0", 115200);
 
 		this.size(128, 64);
 		this.background(0xff);
@@ -35,8 +36,8 @@ public class BitmapDemo extends PApplet
 
 		this.calcCache();
 		this.printCache();
-
-
+		
+		this.frameRate(6);
 	}
 
 	public void draw()
@@ -47,8 +48,8 @@ public class BitmapDemo extends PApplet
 			point(i, height / 2 + _ap.mix.get(i) * height);
 		}
 		this.calcCache();
-		// _sp.write(0xf3);
-		// _sp.write(_cache);
+		_sp.write(0xf3);
+		_sp.write(_cache);
 	}
 
 	public void stop()
@@ -78,7 +79,6 @@ public class BitmapDemo extends PApplet
 				_cache[index] |= 0x01 << (col % 8);
 			}
 		}
-
 	}
 
 	private void printCache()
