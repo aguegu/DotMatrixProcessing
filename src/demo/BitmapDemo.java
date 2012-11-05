@@ -32,21 +32,26 @@ public class BitmapDemo extends PApplet
 		_cache = new byte[this.pixels.length / 8];
 
 		this.stroke(0x00);
-		this.line(0, 0, height - 1, height - 1);
 
 		this.calcCache();
 		this.printCache();
 		
 		this.frameRate(6);
+		
+		println(pixels.length);
 	}
 
 	public void draw()
 	{
 		background(0xff);
+		
 		for (int i = 0; i < _ap.mix.size(); i++)
 		{
-			point(i, height / 2 + _ap.mix.get(i) * height);
+			point(i, 32 + _ap.mix.get(i) * 64);
 		}
+		
+		
+		
 		this.calcCache();
 		_sp.write(0xf3);
 		_sp.write(_cache);

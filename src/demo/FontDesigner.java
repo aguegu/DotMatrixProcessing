@@ -20,7 +20,7 @@ public class FontDesigner extends PApplet
 
 	public void setup()
 	{
-		dmDemo = new DotMatrixDemo(this, 24*1, 7, null); 
+		dmDemo = new DotMatrixDemo(this, 8, 8, null); 
 		dmDemo.SetDisplayStyle(dotWidth, margin);
 		_dm = dmDemo.getDM();
 		_dmd = dmDemo.getDotMatrixDisplay();
@@ -47,7 +47,7 @@ public class FontDesigner extends PApplet
 
 		this.background(0x33);
 		
-		TextHelper.printText(this, calcPattern(), 0xff, 24f, 8f, height - 12f);
+		TextHelper.printText(this, calcPattern(), 0xff, 10f, 8f, height - 12f);
 		dmDemo.display();
 
 	}
@@ -55,12 +55,12 @@ public class FontDesigner extends PApplet
 	private String calcPattern()
 	{
 		String s = new String();
-		for (int c = 0; c < 5; c++)
+		for (int c = 0; c < 8; c++)
 		{
 			byte value = 0;
-			for (int i = 0; i < 7; i++)
+			for (int i = 0; i < 8; i++)
 				if (_dm.getDot(i, c))
-					value |= (0x01 << i);
+					value |= (0x80 >> i);
 
 			s = s.concat(hex(value)).concat(", ");
 		}

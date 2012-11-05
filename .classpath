@@ -11,5 +11,7 @@
 	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b5/modes/java/libraries/minim/library/tritonus_share.jar"/>
 	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b5/modes/java/libraries/serial/library/RXTXcomm.jar"/>
 	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b5/modes/java/libraries/serial/library/serial.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b5/core/library/gluegen-rt-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="/home/agu/tools/processing-2.0b5/core/library/jogl-all-natives-linux-amd64.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
